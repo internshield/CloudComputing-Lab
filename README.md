@@ -1,39 +1,60 @@
-InternShield Cloud Computing & Security — Practical Laboratory Series
-
-A four-laboratory practical learning program covering AWS cloud security, S3 security assessment, IAM security, and Docker container vulnerability assessment.
-
 <div align="center">
 
-DISCOVER · ASSESS · ANALYZE · REMEDIATE · SECURE
+# 🛡️ INTERN SHIELD
 
-Version 1.0 · 2026
+## CLOUD COMPUTING & SECURITY
+### Practical Laboratory Series
+
+**A Four-Laboratory Journey Through AWS Cloud Security & Container Security**
+
+<br>
+
+**DISCOVER · ASSESS · ANALYZE · REMEDIATE · SECURE**
+
+<br>
+
+![Cloud Computing](https://img.shields.io/badge/Cloud%20Computing-AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Cloud Security](https://img.shields.io/badge/Cloud%20Security-InternShield-00A9A5?style=for-the-badge)
+![S3](https://img.shields.io/badge/Amazon%20S3-Storage%20Security-orange?style=for-the-badge&logo=amazons3&logoColor=white)
+![IAM](https://img.shields.io/badge/AWS%20IAM-Identity%20Security-00A9A5?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Container%20Security-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Trivy](https://img.shields.io/badge/Trivy-Vulnerability%20Assessment-1904DA?style=for-the-badge)
+
+**Version 1.0 · 2026**
 
 </div>
-About InternShield
 
-InternShield Cloud Computing & Security Practical Laboratory Series is a structured hands-on laboratory program designed to help learners develop practical knowledge of cloud computing and cloud security.
+---
 
-The complete laboratory structure consists of four practical labs, progressing from cloud-storage discovery to access-control assessment, IAM security analysis, and container vulnerability assessment.
+## ◈ About the Series
 
-                         INTERN SHIELD
-                              │
-                CLOUD COMPUTING & SECURITY
-                              │
-              ┌───────────────┼───────────────┐
-              │               │               │
-              ▼               ▼               ▼
-          CLOUD           IDENTITY        CONTAINER
-         STORAGE          SECURITY         SECURITY
-              │               │               │
-              ▼               ▼               ▼
-             S3              IAM            Docker
-              │               │               │
-              └───────────────┼───────────────┘
-                              ▼
-                       SECURITY ANALYSIS
-                              │
-                              ▼
-                          REMEDIATION
+**InternShield Cloud Computing & Security Practical Laboratory Series** is a structured four-laboratory program designed to provide learners with practical exposure to modern **cloud-security assessment and container-security concepts**.
+
+The series progresses from cloud-storage discovery and security assessment to identity security, privilege-escalation risk analysis, and container vulnerability assessment.
+
+Rather than focusing only on theoretical concepts, the laboratories are structured around a practical security workflow:
+
+```text
+                  ┌─────────────────┐
+                  │     DISCOVER    │
+                  └────────┬────────┘
+                           ↓
+                  ┌─────────────────┐
+                  │     ASSESS      │
+                  └────────┬────────┘
+                           ↓
+                  ┌─────────────────┐
+                  │     ANALYZE     │
+                  └────────┬────────┘
+                           ↓
+                  ┌─────────────────┐
+                  │    REMEDIATE    │
+                  └────────┬────────┘
+                           ↓
+                  ┌─────────────────┐
+                  │      SECURE     │
+                  └─────────────────┘
+```
 Laboratory Structure
 LAB 01 — Performing S3 Bucket Enumeration
 
@@ -255,108 +276,7 @@ Every laboratory follows a consistent practical-learning structure:
 ┌──────────────────────────┐
 │    REVIEW & ASSESSMENT   │
 └──────────────────────────┘
-Repository Structure
-InternShield-Cloud-Computing/
-│
-├── README.md
-│
-├── LAB-01-S3-Bucket-Enumeration/
-│   ├── README.md
-│   ├── Exercise-01.pdf
-│   └── assets/
-│
-├── LAB-02-S3-Bucket-Security-Testing/
-│   ├── README.md
-│   ├── Exercise-02.pdf
-│   └── assets/
-│
-├── LAB-03-IAM-Privilege-Escalation-Risk/
-│   ├── README.md
-│   ├── Exercise-03.pdf
-│   └── assets/
-│
-├── LAB-04-Docker-Vulnerability-Assessment/
-│   ├── README.md
-│   ├── Exercise-04.pdf
-│   └── assets/
-│
-└── LICENSE
-Documentation
 
-Each laboratory is designed as a standalone practical learning module while remaining part of the complete four-lab series.
-
-The laboratory documentation can include:
-
-Scenario
-Objectives
-Tool overview
-Lab environment
-Prerequisites
-Practical procedure
-Expected results
-Security insights
-Security analysis
-Findings
-Countermeasures
-Learning outcomes
-Observation tables
-Completion checklist
-Review questions
-Troubleshooting
-Best practices
-
-The uploaded reference laboratory follows this type of structured documentation, including practical procedures, security analysis, countermeasures, learning outcomes, review questions, troubleshooting, and best practices.
-
-Authorized Training Environment
-⚠️ AUTHORIZED USE ONLY
-
-All security-assessment activities must be performed only against:
-
-Instructor-provided laboratory resources
-Learner-owned resources
-Organization-approved resources
-Systems for which explicit authorization has been granted
-
-Do not perform security testing against third-party or production infrastructure without explicit authorization.
-
-For container-security activities, only scan approved Docker images and authorized targets.
-
-Security Philosophy
-
-InternShield follows a practical security philosophy:
-
-              LEARN
-                │
-                ▼
-             PRACTICE
-                │
-                ▼
-             ANALYZE
-                │
-                ▼
-            VERIFY
-                │
-                ▼
-           REMEDIATE
-                │
-                ▼
-             SECURE
-
-The goal is not simply to identify a vulnerability.
-
-The goal is to understand:
-
-What is exposed?
-
-Why is it exposed?
-
-What security risk does it create?
-
-How can it be verified safely?
-
-How can it be remediated?
-
-Intended Audience
 
 This laboratory series is suitable for:
 
