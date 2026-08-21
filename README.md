@@ -1,170 +1,158 @@
+InternShield Cloud Computing & Security — Practical Laboratory Series
+
+A four-laboratory practical learning program covering AWS cloud security, S3 security assessment, IAM security, and Docker container vulnerability assessment.
+
 <div align="center">
 
-# 🛡️ INTERN SHIELD
+DISCOVER · ASSESS · ANALYZE · REMEDIATE · SECURE
 
-## CLOUD COMPUTING & SECURITY
-### Practical Laboratory Series
-
-**A Four-Laboratory Journey Through AWS Cloud Security & Container Security**
-
-<br>
-
-**DISCOVER · ASSESS · ANALYZE · REMEDIATE · SECURE**
-
-<br>
-
-![Cloud Computing](https://img.shields.io/badge/Cloud%20Computing-AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Cloud Security](https://img.shields.io/badge/Cloud%20Security-InternShield-00A9A5?style=for-the-badge)
-![S3](https://img.shields.io/badge/Amazon%20S3-Storage%20Security-orange?style=for-the-badge&logo=amazons3&logoColor=white)
-![IAM](https://img.shields.io/badge/AWS%20IAM-Identity%20Security-00A9A5?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Container%20Security-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Trivy](https://img.shields.io/badge/Trivy-Vulnerability%20Assessment-1904DA?style=for-the-badge)
-
-**Version 1.0 · 2026**
+Version 1.0 · 2026
 
 </div>
+About InternShield
 
----
+InternShield Cloud Computing & Security Practical Laboratory Series is a structured hands-on laboratory program designed to help learners develop practical knowledge of cloud computing and cloud security.
 
-## ◈ About the Series
+The complete laboratory structure consists of four practical labs, progressing from cloud-storage discovery to access-control assessment, IAM security analysis, and container vulnerability assessment.
 
-**InternShield Cloud Computing & Security Practical Laboratory Series** is a structured four-laboratory program designed to provide learners with practical exposure to modern **cloud-security assessment and container-security concepts**.
+                         INTERN SHIELD
+                              │
+                CLOUD COMPUTING & SECURITY
+                              │
+              ┌───────────────┼───────────────┐
+              │               │               │
+              ▼               ▼               ▼
+          CLOUD           IDENTITY        CONTAINER
+         STORAGE          SECURITY         SECURITY
+              │               │               │
+              ▼               ▼               ▼
+             S3              IAM            Docker
+              │               │               │
+              └───────────────┼───────────────┘
+                              ▼
+                       SECURITY ANALYSIS
+                              │
+                              ▼
+                          REMEDIATION
+Laboratory Structure
+LAB 01 — Performing S3 Bucket Enumeration
 
-The series progresses from cloud-storage discovery and security assessment to identity security, privilege-escalation risk analysis, and container vulnerability assessment.
+Primary Platform: Amazon S3
+Primary Tool: Lazys3
+Focus: Cloud-storage exposure discovery
 
-Rather than focusing only on theoretical concepts, the laboratories are structured around a practical security workflow:
+Lab 01 introduces learners to S3 bucket enumeration as part of an authorized cloud-security assessment.
 
-```text
-                  ┌─────────────────┐
-                  │     DISCOVER    │
-                  └────────┬────────┘
-                           ↓
-                  ┌─────────────────┐
-                  │     ASSESS      │
-                  └────────┬────────┘
-                           ↓
-                  ┌─────────────────┐
-                  │     ANALYZE     │
-                  └────────┬────────┘
-                           ↓
-                  ┌─────────────────┐
-                  │    REMEDIATE    │
-                  └────────┬────────┘
-                           ↓
-                  ┌─────────────────┐
-                  │      SECURE     │
-                  └─────────────────┘
+The laboratory focuses on understanding S3 bucket discovery, enumeration concepts, identifying potentially exposed storage resources, analyzing the security implications of exposure, and documenting assessment findings.
 
+Key Topics
+Amazon S3 fundamentals
+S3 bucket discovery
+Bucket enumeration
+Cloud reconnaissance concepts
+Storage exposure
+Security assessment
+Findings documentation
+S3 security best practices
+Learning Flow
+DISCOVER
+   ↓
+ENUMERATE
+   ↓
+IDENTIFY EXPOSURE
+   ↓
+ANALYZE
+   ↓
+DOCUMENT
+LAB 02 — S3 Bucket Security Testing / Exploitation
 
-◈ Laboratory Roadmap
-Lab	Laboratory	Primary Technology	Security Focus
-01	Performing S3 Bucket Enumeration	Amazon S3	Cloud Storage Discovery
-02	S3 Bucket Security Testing / Exploitation	AWS CLI / S3	Access Control Assessment
-03	Assessing IAM Privilege-Escalation Risks	AWS IAM	Identity & Permission Security
-04	Docker Image Vulnerability Assessment	Docker / Trivy	Container Security
-◈ LAB 01
-Performing S3 Bucket Enumeration
-AMAZON S3 · CLOUD RECONNAISSANCE · STORAGE EXPOSURE
+Primary Platform: Amazon S3
+Primary Tool: AWS CLI
+Focus: Storage permissions and access-control assessment
 
-The first laboratory introduces learners to Amazon S3 bucket enumeration as part of a cloud-security assessment.
+Lab 02 progresses from S3 discovery into controlled S3 security testing.
 
-Learners explore how S3 resources can be discovered and assessed for potential exposure within an authorized laboratory environment.
+Learners examine access controls and security configurations to understand how improperly configured buckets can create data-exposure risks.
 
-Core Topics
-Amazon S3
-   │
-   ├── Bucket Discovery
-   ├── Enumeration
-   ├── Exposure Identification
-   ├── Security Analysis
-   └── Findings Documentation
-Primary Tool
+Any testing involving access to objects or data should be performed exclusively against authorized laboratory resources and test data.
 
-Lazys3
-
-Learning Path
-
-Discover → Enumerate → Identify Exposure → Analyze → Document
-
-◈ LAB 02
-S3 Bucket Security Testing / Exploitation
-AMAZON S3 · AWS CLI · ACCESS CONTROL
-
-Lab 02 builds upon the discovery concepts introduced in Lab 01 and moves into controlled S3 security assessment.
-
-Learners examine storage permissions and access-control configurations to understand how cloud-storage misconfigurations can create security and data-exposure risks.
-
-Any access or data-extraction demonstration must use authorized laboratory resources and test data only.
-
-Core Topics
+Key Topics
 S3 access controls
 Bucket policies
 Permissions
 Public-access configuration
 Storage misconfiguration
 Controlled security testing
-Data-exposure analysis
+Data-exposure risks
+Security analysis
+Remediation concepts
+Learning Flow
+IDENTIFY
+   ↓
+ASSESS
+   ↓
+CONTROLLED TEST
+   ↓
+ANALYZE
+   ↓
+SECURE
+LAB 03 — Assessing IAM Privilege-Escalation Risks
+
+Primary Platform: AWS IAM
+Focus: IAM permissions, excessive privileges, and privilege-escalation risk
+
+Lab 03 focuses on AWS Identity and Access Management security assessment.
+
+Learners analyze IAM users, managed policies, inline policies, permissions, and potentially dangerous permission configurations to identify privilege-escalation risk indicators.
+
+The laboratory emphasizes risk identification and analysis, rather than automatically exploiting identified permissions.
+
+Key Topics
+AWS IAM
+IAM users
+IAM groups
+IAM roles
+Managed policies
+Inline policies
+Permissions
+Excessive privileges
+Privilege-escalation risk indicators
+Least-privilege principles
 Security remediation
-Primary Technology
+Learning Flow
+IDENTIFY
+   ↓
+ANALYZE
+   ↓
+ASSESS RISK
+   ↓
+VERIFY
+   ↓
+SECURE
+LAB 04 — Docker Image Vulnerability Assessment
 
-AWS CLI + Amazon S3
+Primary Platform: Docker Container Runtime
+Primary Tool: Trivy
+Focus: Docker image vulnerability scanning
 
-Learning Path
+Lab 04 introduces learners to container-security assessment using Trivy.
 
-Identify → Assess → Test → Analyze → Secure
+The laboratory focuses on scanning Docker images, identifying known vulnerabilities, understanding CVEs and severity levels, comparing vulnerability posture, documenting findings, and developing remediation recommendations.
 
-◈ LAB 03
-Assessing IAM Privilege-Escalation Risks
-AWS IAM · POLICIES · PERMISSIONS · LEAST PRIVILEGE
+The source laboratory identifies Docker Container Runtime as the primary platform and Trivy as the primary tool.
 
-Lab 03 focuses on the security assessment of AWS Identity and Access Management (IAM) configurations.
-
-Learners analyze users, policies, permissions, and potentially dangerous permission combinations to identify privilege-escalation risk indicators.
-
-The laboratory emphasizes understanding and validating security risks rather than automatically exploiting them.
-
-Core Topics
-AWS IAM
- │
- ├── Users
- ├── Groups
- ├── Roles
- ├── Managed Policies
- ├── Inline Policies
- ├── Permissions
- ├── Least Privilege
- └── Escalation Risk
-Primary Technology
-
-AWS IAM
-
-Learning Path
-
-Identify → Analyze → Assess → Verify → Secure
-
-◈ LAB 04
-Docker Image Vulnerability Assessment
-DOCKER · TRIVY · CVEs · CONTAINER SECURITY
-
-The fourth laboratory introduces learners to Docker image security assessment using Trivy.
-
-Learners scan container images, identify known vulnerabilities, interpret CVEs and severity levels, compare vulnerability posture, and develop remediation recommendations.
-
-Core Topics
+Key Topics
 Docker image fundamentals
 Container security
-Trivy vulnerability scanning
-OS-package vulnerabilities
+Trivy
+Vulnerability scanning
 CVE analysis
 Severity classification
-Vulnerability triage
+Vulnerable dependencies
 Base-image security
+Vulnerability triage
 Remediation
 Re-scanning
-Primary Tool
-
-Trivy
-
 Security Lifecycle
 BUILD
   ↓
@@ -179,157 +167,252 @@ REMEDIATE
 RE-SCAN
   ↓
 VERIFY
-◈ Technology Stack
-<div align="center">
-Technology	Purpose
-AWS	Cloud infrastructure
-Amazon S3	Object storage security
-AWS IAM	Identity & access management
-AWS CLI	Cloud administration & assessment
-Lazys3	S3 enumeration
-Docker	Container platform
-Trivy	Vulnerability assessment
-Linux / Parrot / Kali	Security laboratory environment
-</div>
-◈ Learning Outcomes
+
+The laboratory also covers security countermeasures such as using maintained base images, regularly updating images, integrating scanning into CI/CD, prioritizing critical/high-severity findings, and tracking remediation.
+
+Complete Lab Roadmap
+Lab	Laboratory	Platform / Tool	Primary Focus
+LAB 01	Performing S3 Bucket Enumeration	Amazon S3 / Lazys3	Storage Discovery
+LAB 02	S3 Bucket Security Testing / Exploitation	S3 / AWS CLI	Access-Control Assessment
+LAB 03	Assessing IAM Privilege-Escalation Risks	AWS IAM	Identity & Permission Security
+LAB 04	Docker Image Vulnerability Assessment	Docker / Trivy	Container Security
+Technology Stack
+┌──────────────────────────────────────────────┐
+│              CLOUD COMPUTING                 │
+├──────────────────────────────────────────────┤
+│ AWS                                          │
+│ Amazon S3                                    │
+│ AWS IAM                                      │
+│ AWS CLI                                      │
+├──────────────────────────────────────────────┤
+│              SECURITY TOOLS                  │
+├──────────────────────────────────────────────┤
+│ Lazys3                                       │
+│ Trivy                                        │
+├──────────────────────────────────────────────┤
+│              CONTAINER SECURITY              │
+├──────────────────────────────────────────────┤
+│ Docker                                       │
+│ Container Images                             │
+│ Vulnerability Databases                      │
+├──────────────────────────────────────────────┤
+│              LAB ENVIRONMENT                 │
+├──────────────────────────────────────────────┤
+│ Linux / Kali Linux / Parrot Security         │
+└──────────────────────────────────────────────┘
+Learning Outcomes
 
 After completing the four laboratories, learners should be able to:
 
-01 Understand fundamental cloud-security assessment concepts.
+Understand fundamental cloud-security assessment concepts.
+Understand Amazon S3 storage-security concepts.
+Perform S3 enumeration within an authorized environment.
+Assess S3 access-control configurations.
+Identify potential cloud-storage exposure.
+Analyze AWS IAM policies and permissions.
+Recognize potentially dangerous IAM permission configurations.
+Understand least-privilege principles.
+Perform Docker image vulnerability assessment.
+Interpret CVEs and vulnerability severity.
+Document security findings.
+Recommend appropriate security countermeasures.
+Practical Learning Framework
 
-02 Identify potential S3 storage exposure.
+Every laboratory follows a consistent practical-learning structure:
 
-03 Assess cloud-storage access-control configurations.
+┌──────────────────────────┐
+│       LAB SCENARIO       │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│       OBJECTIVES         │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ TOOL / PLATFORM OVERVIEW │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ ENVIRONMENT & PREREQS    │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│   PRACTICAL PROCEDURE    │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│     EXPECTED RESULTS     │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│    SECURITY ANALYSIS     │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│     COUNTERMEASURES      │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│    REVIEW & ASSESSMENT   │
+└──────────────────────────┘
+Repository Structure
+InternShield-Cloud-Computing/
+│
+├── README.md
+│
+├── LAB-01-S3-Bucket-Enumeration/
+│   ├── README.md
+│   ├── Exercise-01.pdf
+│   └── assets/
+│
+├── LAB-02-S3-Bucket-Security-Testing/
+│   ├── README.md
+│   ├── Exercise-02.pdf
+│   └── assets/
+│
+├── LAB-03-IAM-Privilege-Escalation-Risk/
+│   ├── README.md
+│   ├── Exercise-03.pdf
+│   └── assets/
+│
+├── LAB-04-Docker-Vulnerability-Assessment/
+│   ├── README.md
+│   ├── Exercise-04.pdf
+│   └── assets/
+│
+└── LICENSE
+Documentation
 
-04 Analyze AWS IAM users, policies, and permissions.
+Each laboratory is designed as a standalone practical learning module while remaining part of the complete four-lab series.
 
-05 Recognize potential IAM privilege-escalation risk indicators.
+The laboratory documentation can include:
 
-06 Apply least-privilege security principles.
+Scenario
+Objectives
+Tool overview
+Lab environment
+Prerequisites
+Practical procedure
+Expected results
+Security insights
+Security analysis
+Findings
+Countermeasures
+Learning outcomes
+Observation tables
+Completion checklist
+Review questions
+Troubleshooting
+Best practices
 
-07 Perform Docker image vulnerability assessments.
+The uploaded reference laboratory follows this type of structured documentation, including practical procedures, security analysis, countermeasures, learning outcomes, review questions, troubleshooting, and best practices.
 
-08 Interpret CVEs and vulnerability severity.
+Authorized Training Environment
+⚠️ AUTHORIZED USE ONLY
 
-09 Document security findings professionally.
-
-10 Recommend appropriate security countermeasures.
-
-◈ Practical Laboratory Structure
-
-Each laboratory follows a consistent learning framework:
-
-┌─────────────────────────────────────────┐
-│             LAB SCENARIO                │
-├─────────────────────────────────────────┤
-│              OBJECTIVES                 │
-├─────────────────────────────────────────┤
-│          TOOL / PLATFORM                │
-├─────────────────────────────────────────┤
-│       ENVIRONMENT & PREREQUISITES       │
-├─────────────────────────────────────────┤
-│        PRACTICAL PROCEDURE              │
-├─────────────────────────────────────────┤
-│         EXPECTED RESULTS                │
-├─────────────────────────────────────────┤
-│          SECURITY INSIGHT               │
-├─────────────────────────────────────────┤
-│          SECURITY ANALYSIS              │
-├─────────────────────────────────────────┤
-│          COUNTERMEASURES                │
-├─────────────────────────────────────────┤
-│           LEARNING OUTCOMES             │
-├─────────────────────────────────────────┤
-│       REVIEW & TROUBLESHOOTING          │
-└─────────────────────────────────────────┘
-◈ Authorized Training Environment
-
-IMPORTANT — AUTHORIZED USE ONLY
-
-All security assessment activities in this repository must be performed only against:
+All security-assessment activities must be performed only against:
 
 Instructor-provided laboratory resources
 Learner-owned resources
-Organization-approved environments
+Organization-approved resources
 Systems for which explicit authorization has been granted
 
-Do not use these laboratories to assess third-party infrastructure or production systems without explicit permission.
+Do not perform security testing against third-party or production infrastructure without explicit authorization.
 
-The container-security laboratory similarly requires vulnerability scanning to remain within authorized images and targets.
+For container-security activities, only scan approved Docker images and authorized targets.
 
-◈ Security Philosophy
+Security Philosophy
 
-InternShield promotes responsible cybersecurity education.
+InternShield follows a practical security philosophy:
 
-Our approach is:
+              LEARN
+                │
+                ▼
+             PRACTICE
+                │
+                ▼
+             ANALYZE
+                │
+                ▼
+            VERIFY
+                │
+                ▼
+           REMEDIATE
+                │
+                ▼
+             SECURE
 
-             KNOWLEDGE
-                 │
-                 ▼
-              PRACTICE
-                 │
-                 ▼
-             ANALYSIS
-                 │
-                 ▼
-            VERIFICATION
-                 │
-                 ▼
-            REMEDIATION
-                 │
-                 ▼
-              SECURITY
+The goal is not simply to identify a vulnerability.
 
-The objective is not simply to discover vulnerabilities.
+The goal is to understand:
 
-The objective is to understand:
+What is exposed?
 
-Why the vulnerability exists, what risk it creates, how it can be verified safely, and how it can be remediated.
+Why is it exposed?
 
-◈ Documentation & Resources
+What security risk does it create?
 
-Each laboratory is accompanied by structured learning material covering practical activities, security observations, analysis, findings, countermeasures, troubleshooting, and review.
+How can it be verified safely?
 
-The repository is intended to serve as a centralized learning resource for the InternShield Cloud Computing & Security practical program.
+How can it be remediated?
 
-◈ Series Information
+Intended Audience
 
-Series:
+This laboratory series is suitable for:
 
-InternShield Cloud Computing & Security Practical Laboratory Series
-
-Laboratories: 04
-
-Edition: 2026
-
-Version: 1.0
-
-Organization: InternShield
-
-Contributors:
-
+Cybersecurity students
+Cloud-computing students
+Cloud-security learners
+Ethical-hacking learners
+AWS beginners
+Security researchers
+Aspiring cloud-security professionals
+DevSecOps learners
+Technical training programs
+Series Information
+Information	Details
+Organization	InternShield
+Series	Cloud Computing & Security Practical Laboratory Series
+Laboratories	4
+Version	1.0
+Edition	2026
+Primary Cloud Platform	Amazon Web Services
+Security Domains	Cloud, IAM, Storage, Containers
+Contributors	Vidit Shringi, Kriti Purohit
+Contributors
 Vidit Shringi
+
+Cloud Computing & Cybersecurity — InternShield
+
 Kriti Purohit
-◈ InternShield
+
+Cloud Computing & Security — InternShield
+
 <div align="center">
 🛡️ INTERN SHIELD
+CLOUD COMPUTING & SECURITY
+
+LAB 01 · LAB 02 · LAB 03 · LAB 04
+
+<br>
+
+DISCOVER · ASSESS · ANALYZE · REMEDIATE · SECURE
+
+<br>
+
 Learn • Practice • Defend • Secure • Innovate
 
-Cloud Computing · Cloud Security · Cybersecurity Education
-
-2026
-
+2026 · Version 1.0
 </div>
 Responsible Use
 
 This repository is provided for educational, research, and authorized security-training purposes.
 
-Users are responsible for ensuring that their activities comply with applicable laws, organizational policies, and the authorization scope of the environment being assessed.
+Users are responsible for ensuring that all activities comply with applicable laws, organizational policies, and the authorization scope of the environment being assessed.
 
 InternShield does not endorse unauthorized access, data extraction, privilege escalation, or security testing against systems without permission.
 
 <div align="center">
-DISCOVER → ASSESS → ANALYZE → REMEDIATE → SECURE
 
 InternShield — Your Shield in the Digital World.
 
