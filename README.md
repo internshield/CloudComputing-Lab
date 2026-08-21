@@ -75,6 +75,7 @@ Storage exposure
 Security assessment
 Findings documentation
 S3 security best practices
+```
 Learning Flow
 DISCOVER
    ↓
@@ -85,6 +86,7 @@ IDENTIFY EXPOSURE
 ANALYZE
    ↓
 DOCUMENT
+```
 LAB 02 — S3 Bucket Security Testing / Exploitation
 
 Primary Platform: Amazon S3
@@ -107,6 +109,7 @@ Controlled security testing
 Data-exposure risks
 Security analysis
 Remediation concepts
+```
 Learning Flow
 IDENTIFY
    ↓
@@ -117,6 +120,7 @@ CONTROLLED TEST
 ANALYZE
    ↓
 SECURE
+```
 LAB 03 — Assessing IAM Privilege-Escalation Risks
 
 Primary Platform: AWS IAM
@@ -140,6 +144,7 @@ Excessive privileges
 Privilege-escalation risk indicators
 Least-privilege principles
 Security remediation
+```
 Learning Flow
 IDENTIFY
    ↓
@@ -150,6 +155,7 @@ ASSESS RISK
 VERIFY
    ↓
 SECURE
+```
 LAB 04 — Docker Image Vulnerability Assessment
 
 Primary Platform: Docker Container Runtime
@@ -161,7 +167,7 @@ Lab 04 introduces learners to container-security assessment using Trivy.
 The laboratory focuses on scanning Docker images, identifying known vulnerabilities, understanding CVEs and severity levels, comparing vulnerability posture, documenting findings, and developing remediation recommendations.
 
 The source laboratory identifies Docker Container Runtime as the primary platform and Trivy as the primary tool.
-
+```
 Key Topics
 Docker image fundamentals
 Container security
@@ -188,7 +194,7 @@ REMEDIATE
 RE-SCAN
   ↓
 VERIFY
-
+```
 The laboratory also covers security countermeasures such as using maintained base images, regularly updating images, integrating scanning into CI/CD, prioritizing critical/high-severity findings, and tracking remediation.
 
 Complete Lab Roadmap
@@ -197,7 +203,9 @@ LAB 01	Performing S3 Bucket Enumeration	Amazon S3 / Lazys3	Storage Discovery
 LAB 02	S3 Bucket Security Testing / Exploitation	S3 / AWS CLI	Access-Control Assessment
 LAB 03	Assessing IAM Privilege-Escalation Risks	AWS IAM	Identity & Permission Security
 LAB 04	Docker Image Vulnerability Assessment	Docker / Trivy	Container Security
+```
 Technology Stack
+
 ┌──────────────────────────────────────────────┐
 │              CLOUD COMPUTING                 │
 ├──────────────────────────────────────────────┤
@@ -221,6 +229,8 @@ Technology Stack
 ├──────────────────────────────────────────────┤
 │ Linux / Kali Linux / Parrot Security         │
 └──────────────────────────────────────────────┘
+
+```
 Learning Outcomes
 
 After completing the four laboratories, learners should be able to:
@@ -240,7 +250,7 @@ Recommend appropriate security countermeasures.
 Practical Learning Framework
 
 Every laboratory follows a consistent practical-learning structure:
-
+```
 ┌──────────────────────────┐
 │       LAB SCENARIO       │
 └────────────┬─────────────┘
@@ -276,8 +286,8 @@ Every laboratory follows a consistent practical-learning structure:
 ┌──────────────────────────┐
 │    REVIEW & ASSESSMENT   │
 └──────────────────────────┘
-
-
+```
+```
 This laboratory series is suitable for:
 
 Cybersecurity students
@@ -299,6 +309,8 @@ Edition	2026
 Primary Cloud Platform	Amazon Web Services
 Security Domains	Cloud, IAM, Storage, Containers
 Contributors	Vidit Shringi, Kriti Purohit
+
+```
 Contributors
 Vidit Shringi
 
